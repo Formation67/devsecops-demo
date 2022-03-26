@@ -1,4 +1,5 @@
-FROM openjdk:11-alpine
+FROM openjdk:11.0.14-jre-bullseye
+
 EXPOSE 8080
 ARG JAR_FILE=target/*.jar
 ADD ${JAR_FILE} app.jar
